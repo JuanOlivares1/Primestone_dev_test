@@ -31,35 +31,6 @@
 </div>
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -87,7 +58,7 @@ To run this project it is necessary to have at least Python 3.6 and a local Post
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/JuanOlivares1/Primestone_dev_test.git
    ```
 2. Install python dependences, go to the root project directory an run:
    ```sh
@@ -118,6 +89,10 @@ The server consists of 3 endpoints
   curl -X GET http://127.0.0.1:5000/get-prime-numbers?limit=10
   ```
   
+  - Example:
+
+    ![image](https://user-images.githubusercontent.com/48563349/143718428-747c7c6f-07a8-48e1-b015-3fad9c3ea7e8.png)
+
 * Inches to meters converter: 
   
   This endpoint recieves json data in the following format 
@@ -141,17 +116,47 @@ The server consists of 3 endpoints
   curl -X POST http://127.0.0.1:5000/convert-height -H "Content-Type: application/json" -d '{"name":"pedro","height":"70 pulgadas"}'
   ```
     
+  - Example:
+
+    ![image](https://user-images.githubusercontent.com/48563349/143718501-511d0469-22c6-4c7e-bd95-3454bcedcf6f.png)
   
 * Data storage
 
+  This endpoint recieves json data in any format, it always saves the json on postgres database, unless it's empty,  no matter the content
+  
+  To use this endpoint send a PUT http request to the endpoint 'http://127.0.0.1:5000/set-data'.
+  
+  ```sh
+  curl -X PUT http://127.0.0.1:5000/set-data -H "Content-Type: application/json" -d '{"name":"Lucas","age":"35"}'
+  ```
+  
+  If method worked correctly it answers with 'Created', otherwise 'Failed' is sent. But you can ensure data was saved by psql as follows:
+  
+  ```sh
+  psql primestone_api
+  ```
+  
+  And quering the data:
+  
+  ```sql
+  SELECT * FROM data
+  ```
+  
+  
+  - Example:
+
+    ![image](https://user-images.githubusercontent.com/48563349/143718541-79fade11-85ab-4df8-8003-cc15f0ad7535.png)
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Juan DAvid Olivares Padilla - [@OlivaresP____](https://twitter.com/OlivaresP____) - jdop2000@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/JuanOlivares1/Primestone_dev_test](https://github.com/JuanOlivares1/Primestone_dev_test)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
