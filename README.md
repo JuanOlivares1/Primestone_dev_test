@@ -62,7 +62,7 @@ To run this project it is necessary to have at least Python 3.6 and a local Post
    ```
 2. Install python dependences, go to the root project directory and run:
    ```sh
-   pip install -r requirement.txt
+   pip install -r requirements.txt
    ```
 3. Create a new Postgres database named 'primestone_api' and create a valid user if you haven't
 
