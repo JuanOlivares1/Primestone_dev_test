@@ -155,7 +155,7 @@ The server consists of 3 endpoints
 <!-- CONTACT -->
 ## Contact
 
-Juan DAvid Olivares Padilla - [@OlivaresP____](https://twitter.com/OlivaresP____) - jdop2000@gmail.com
+Juan David Olivares Padilla - [@OlivaresP____](https://twitter.com/OlivaresP____) - jdop2000@gmail.com - [linkedin](https://www.linkedin.com/in/juanolivares1416/)
 
 Project Link: [https://github.com/JuanOlivares1/Primestone_dev_test](https://github.com/JuanOlivares1/Primestone_dev_test)
 
