@@ -35,7 +35,7 @@
 ## About The Project
 
 This is a multipurpose api that contains 3 functionalities:
-- prime number generator
+- Prime number generator
 - Inches to meters converter
 - Data storage.
 
@@ -60,11 +60,11 @@ To run this project it is necessary to have at least Python 3.6 and a local Post
    ```sh
    git clone https://github.com/JuanOlivares1/Primestone_dev_test.git
    ```
-2. Install python dependences, go to the root project directory an run:
+2. Install python dependences, go to the root project directory and run:
    ```sh
    pip install -r requirement.txt
    ```
-3. Create a new Postgres database named 'primestone_api'
+3. Create a new Postgres database named 'primestone_api' and create a valid user if you haven't
 
 4. Run server:
    ```sh
